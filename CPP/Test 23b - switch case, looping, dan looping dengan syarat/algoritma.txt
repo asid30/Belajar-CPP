@@ -1,0 +1,60 @@
+Algoritma MENCETAK_ANGKA_(1 SD 4)_ANGKA_DIBACA_DARI_PIRANTI_MASUKAN
+{Algoritma mencetak angka 1 sd 4 dengan output berupa bacaan angka tersebut}
+
+Deklarasi
+bill : real				{Variabel untuk bilangan}
+
+Deskripsi
+read(bill)				{Baca input variabel x}
+case(bill)
+bill=1 : write ('Satu')
+bill=2 : write ('Dua')
+bill=3 : write ('Tiga')
+bill=4 : write ('Empat')
+Otherwise : write ('Bukan termasuk bilangan 1 sampai dengan 4')
+Endcase
+
+-----------------------------------------------
+
+Algoritma MENENTUKAN_2_BILANGAN_TERBESAR
+{Algoritma Mencetak bilangan terbesar dari 2 bilangan yang dibaca dari piranti masukan}
+
+Deklarasi
+a : real				{Variabel bilangan pertama}
+b : real				{Variabel bilangan kedua}
+
+Deskripsi
+read (a)				{Baca bilangan pertama}
+read (b)				{Baca bilangan kedua}
+if a>b then				{Jika bilangan pertama lebih besar dari bilangan kedua}
+  write a				{Cetak bilangan pertama}
+Else
+if b>a then				{Jika bilangan kedua lebih besar dari bilangan pertama}
+  write b				{Cetak bilangan kedua}
+Endif
+Endif
+
+-----------------------------------------------
+
+Algoritma MENENTUKAN_PIN_BENAR_ATAU_SALAH
+{Algoritma mencetak notifikasi bagi pengguna mesin ATM dengan kondisi pin benar atau pin salah (pengguna diberi kesempatan 3 kali untuk mencoba memasukkan pinnya kembali)}
+
+Deklarasi
+a : real				{Password yang benar}
+b : real				{Input password}
+c : real				{Maksimal kesempatan untuk mencoba}
+
+Deskripsi
+repeat					{Inisiasi perulangan}
+read (a)				{Baca password}
+if b==a then				{Jika input password sama dengan password benar}
+  write ('BENAR')			{Cetak kata benar}
+  c=2
+Else					{Jika input password salah}
+  write ('SALAH')			{Cetak kata salah}
+Endif
+Endif
+until c<3				{Lakukan sampai 3x}
+
+
+
